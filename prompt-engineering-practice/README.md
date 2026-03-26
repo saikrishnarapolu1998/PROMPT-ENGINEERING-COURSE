@@ -1,6 +1,14 @@
 # Prompt Engineering Practice
 
-Beginner-friendly practice project for learning prompt engineering with simple Python examples and short notes.
+This project demonstrates core prompt engineering concepts through simple Python examples, short lesson notes, and practice assignments. It is designed to be easy to review quickly while still showing practical prompting work.
+
+## What This Project Includes
+
+- Runnable prompt engineering examples in Python
+- Short notes for each concept
+- Example prompts and sample outputs in the notes
+- Practice assignments for each topic
+- Local mock responses when no Gemini API key is configured
 
 ## Topics Covered
 
@@ -9,7 +17,7 @@ Beginner-friendly practice project for learning prompt engineering with simple P
 - Few-shot prompting
 - Multi-shot prompting
 - Chain-of-thought prompting
-- Zero-shot chain-of-thought
+- Zero-shot chain-of-thought prompting
 - System, user, and assistant roles
 - Prompt structuring basics
 - Prompt reuse and versioning
@@ -17,7 +25,24 @@ Beginner-friendly practice project for learning prompt engineering with simple P
 - Prompt debugging
 - Prompt tuning vs instruction tuning
 
-## Setup Steps
+## Project Structure
+
+```text
+prompt-engineering-practice/
+├── assignments/
+├── examples/
+├── prompts/
+├── helper.py
+├── README.md
+└── requirements.txt
+```
+
+- [`examples/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/examples) contains runnable Python files
+- [`prompts/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/prompts) contains notes, example prompts, and sample outputs
+- [`assignments/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/assignments) contains practice tasks
+- [`helper.py`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/helper.py) handles Gemini calls and local fallback responses
+
+## Setup
 
 ```bash
 cd /Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice
@@ -25,39 +50,29 @@ python3 -m venv .venv
 ./.venv/bin/pip install -r requirements.txt
 ```
 
-Create `.env` in the project folder and add your Gemini API key:
+Create `.env` in the project folder:
 
 ```env
 GEMINI_API_KEY=your_api_key_here
 GEMINI_MODEL=gemini-2.5-flash
 ```
 
-## How To Run Example Files
+If `GEMINI_API_KEY` is missing, the project still runs using local demo responses so the examples remain reviewable.
 
-Run any practice file from the project folder:
+## How To Run
 
 ```bash
 cd /Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice
-./.venv/bin/python examples/08_prompt_structuring_basics.py
+./.venv/bin/python examples/01_zero_shot.py
 ```
 
-You can replace the filename with any other file inside `examples/`.
+Replace the filename with any file from [`examples/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/examples).
 
-## Folder Structure
+## Suggested Review Path
 
-```text
-prompt-engineering-practice/
-├── .env
-├── .gitignore
-├── .venv/
-├── requirements.txt
-├── helper.py
-├── README.md
-├── examples/
-├── prompts/
-└── assignments/
-```
+If someone is visiting this repository for the first time, the fastest way to review it is:
 
-- `examples/` contains runnable Python example files
-- `prompts/` contains topic notes in Markdown
-- `assignments/` contains assignment files in Markdown
+1. Read this README.
+2. Open a few files in [`prompts/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/prompts) to see the concept, sample prompt, and sample output.
+3. Open the matching script in [`examples/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/examples) to see the runnable implementation.
+4. Check [`assignments/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/assignments) for hands-on practice items.

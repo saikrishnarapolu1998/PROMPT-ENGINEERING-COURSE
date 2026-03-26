@@ -1,41 +1,62 @@
 # Prompt Engineering Course
 
-This repository contains beginner-friendly examples of common prompting techniques using Python.
+This repository showcases beginner-friendly prompt engineering practice using Python and Gemini-compatible prompts. It is organized as a small portfolio project that demonstrates common prompting patterns, runnable examples, and short written notes.
 
-## Course Structure
+## What Recruiters Can See Quickly
 
-### Lesson Notes
+- Practical prompt engineering examples, not just theory
+- Runnable Python scripts for each prompting concept
+- Clear lesson notes with sample prompts and sample outputs
+- Structured project layout with examples, prompts, and assignments
 
-- [Zero-Shot Prompting](./00-prompting-techniques/01_zero_shot.md)
-- [One-Shot Prompting](./00-prompting-techniques/02_one_shot.md)
-- [Few-Shot Prompting](./00-prompting-techniques/03_few_shot.md)
-- [Multi-Shot Prompting](./00-prompting-techniques/04_multi_shot.md)
-- [Chain-of-Thought Prompting](./00-prompting-techniques/05_chain_of_thought.md)
-- [Zero-Shot Chain-of-Thought Prompting](./00-prompting-techniques/06_zero_shot_cot.md)
+## Main Project
 
-### Python Prompt Examples
+The active project is inside [`prompt-engineering-practice`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice).
 
-- [`00-prompting-techniques/prompts/01_zero_shot.py`](./00-prompting-techniques/prompts/01_zero_shot.py)
-- [`00-prompting-techniques/prompts/02_one_shot.py`](./00-prompting-techniques/prompts/02_one_shot.py)
-- [`00-prompting-techniques/prompts/03_few_shot.py`](./00-prompting-techniques/prompts/03_few_shot.py)
-- [`00-prompting-techniques/prompts/04_multi_shot.py`](./00-prompting-techniques/prompts/04_multi_shot.py)
-- [`00-prompting-techniques/prompts/05_chain_of_thought.py`](./00-prompting-techniques/prompts/05_chain_of_thought.py)
-- [`00-prompting-techniques/prompts/06_zero_shot_cot.py`](./00-prompting-techniques/prompts/06_zero_shot_cot.py)
+Inside it, you will find:
 
-## What You Will Learn
+- [`examples/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/examples) for runnable Python files
+- [`prompts/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/prompts) for short topic notes with example outputs
+- [`assignments/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/assignments) for practice tasks
+- [`README.md`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/README.md) for setup and execution instructions
 
-- How to write prompts without examples
-- How to guide the model with one or more examples
-- How to structure prompts for tagging and rewriting tasks
-- How to encourage step-by-step reasoning
-- How to use prompting for practical business and daily-life scenarios
+## Topics Covered
 
-## How To Run
+- Zero-shot prompting
+- One-shot prompting
+- Few-shot prompting
+- Multi-shot prompting
+- Chain-of-thought prompting
+- Zero-shot chain-of-thought prompting
+- System, user, and assistant roles
+- Prompt structuring basics
+- Prompt reuse and versioning
+- Output formatting
+- Prompt debugging
+- Prompt tuning vs instruction tuning
 
-Run any example file from the project root:
+## Quick Start
 
 ```bash
-python 00-prompting-techniques/prompts/01_zero_shot.py
+cd prompt-engineering-practice
+python3 -m venv .venv
+./.venv/bin/pip install -r requirements.txt
 ```
 
-You can replace the filename with any other lesson example.
+Then add a `.env` file in `prompt-engineering-practice/`:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+GEMINI_MODEL=gemini-2.5-flash
+```
+
+Run an example:
+
+```bash
+cd prompt-engineering-practice
+./.venv/bin/python examples/01_zero_shot.py
+```
+
+## Repository Goal
+
+This repository is meant to demonstrate understanding of prompt design fundamentals through simple, readable examples that can be reviewed quickly by recruiters, hiring managers, and other learners.
