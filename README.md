@@ -34,6 +34,12 @@ Inside it, you will find:
 - Output formatting
 - Prompt debugging
 - Prompt tuning vs instruction tuning
+- Guardrails for instructions, scope, safety, behavior, privacy, and tool actions
+- Fallback handling, escalation, and output validation
+- Bias, fairness, and ethical risk reduction
+- Controlling LLM behavior for domain-specific communication
+- JSON prompting for workflow and API reliability
+- Safe prompt workflows with constraints and fallback responses
 
 ## Quick Start
 
@@ -56,6 +62,14 @@ Run an example:
 cd prompt-engineering-practice
 ./.venv/bin/python examples/01_zero_shot.py
 ```
+
+Recent advanced examples include:
+
+- `examples/13_01_instruction_guardrails.py` through `examples/13_13_combined_guardrail_workflow.py`
+- `examples/14_bias_fairness_ethical_risks.py`
+- `examples/15_controlling_llm_behavior.py`
+- `examples/16_json_prompting_api_reliability.py`
+- `examples/17_safe_prompt_workflow_constraints_fallbacks.py`
 
 ## Repository Goal
 

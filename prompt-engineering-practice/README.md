@@ -24,6 +24,12 @@ This project demonstrates core prompt engineering concepts through simple Python
 - Output formatting
 - Prompt debugging
 - Prompt tuning vs instruction tuning
+- Instruction, scope, safety, and behavior guardrails
+- Output validation, fallback handling, escalation, privacy, and tool action guardrails
+- Bias, fairness, and ethical risk reduction
+- Controlling LLM behavior with explicit style constraints
+- JSON prompting for reliable workflow or API outputs
+- Safe prompt workflows with operational limits and fallback behavior
 
 ## Project Structure
 
@@ -41,6 +47,9 @@ prompt-engineering-practice/
 - [`prompts/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/prompts) contains notes, example prompts, and sample outputs
 - [`assignments/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/assignments) contains practice tasks
 - [`helper.py`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/helper.py) handles Gemini calls and local fallback responses
+
+The `prompts/` folder currently covers lessons `01` through `12`.
+The `examples/` folder continues beyond that with advanced runnable examples from `13_01` through `17`.
 
 ## Setup
 
@@ -67,6 +76,15 @@ cd /Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practi
 ```
 
 Replace the filename with any file from [`examples/`](/Users/saikrishna/Desktop/prompt-engineering-course/prompt-engineering-practice/examples).
+
+Examples you can try next:
+
+- `examples/13_01_instruction_guardrails.py`
+- `examples/13_13_combined_guardrail_workflow.py`
+- `examples/14_bias_fairness_ethical_risks.py`
+- `examples/15_controlling_llm_behavior.py`
+- `examples/16_json_prompting_api_reliability.py`
+- `examples/17_safe_prompt_workflow_constraints_fallbacks.py`
 
 ## Suggested Review Path
 
